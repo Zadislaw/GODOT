@@ -1,0 +1,400 @@
+[gd_scene load_steps=158 format=2]
+
+[ext_resource path="res://Spritesheet/stance.png" type="Texture" id=1]
+[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://Spritesheet/Ground.png" type="Texture" id=3]
+[ext_resource path="res://Spritesheet/mount.png" type="Texture" id=4]
+[ext_resource path="res://Spritesheet/hang.png" type="Texture" id=5]
+[ext_resource path="res://Spritesheet/f_ground.png" type="Texture" id=6]
+[ext_resource path="res://Spritesheet/run4.png" type="Texture" id=7]
+[ext_resource path="res://Spritesheet/jump1.png" type="Texture" id=8]
+[ext_resource path="res://Spritesheet/run5.png" type="Texture" id=9]
+[ext_resource path="res://Spritesheet/jump2.png" type="Texture" id=10]
+[ext_resource path="res://Spritesheet/run0.png" type="Texture" id=11]
+[ext_resource path="res://Spritesheet/run1.png" type="Texture" id=12]
+[ext_resource path="res://Spritesheet/run2.png" type="Texture" id=13]
+[ext_resource path="res://Spritesheet/jump0.png" type="Texture" id=14]
+[ext_resource path="res://Spritesheet/run3.png" type="Texture" id=15]
+[ext_resource path="res://Spritesheet/bak.jpg" type="Texture" id=16]
+[ext_resource path="res://Spritesheet/obstacle.png" type="Texture" id=17]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0011.png" type="Texture" id=18]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0008.png" type="Texture" id=19]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0019.png" type="Texture" id=20]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0027.png" type="Texture" id=21]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0030.png" type="Texture" id=22]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0038.png" type="Texture" id=23]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0023.png" type="Texture" id=24]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0041.png" type="Texture" id=25]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0002.png" type="Texture" id=26]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0036.png" type="Texture" id=27]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0003.png" type="Texture" id=28]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0015.png" type="Texture" id=29]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0028.png" type="Texture" id=30]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0039.png" type="Texture" id=31]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0007.png" type="Texture" id=32]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0031.png" type="Texture" id=33]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0005.png" type="Texture" id=34]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0021.png" type="Texture" id=35]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0010.png" type="Texture" id=36]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0020.png" type="Texture" id=37]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0023.png" type="Texture" id=38]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0026.png" type="Texture" id=39]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0034.png" type="Texture" id=40]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0015.png" type="Texture" id=41]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0013.png" type="Texture" id=42]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0018.png" type="Texture" id=43]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0017.png" type="Texture" id=44]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0032.png" type="Texture" id=45]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0003.png" type="Texture" id=46]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0004.png" type="Texture" id=47]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0022.png" type="Texture" id=48]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0006.png" type="Texture" id=49]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0011.png" type="Texture" id=50]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0037.png" type="Texture" id=51]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0012.png" type="Texture" id=52]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0016.png" type="Texture" id=53]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0042.png" type="Texture" id=54]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0001.png" type="Texture" id=55]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0002.png" type="Texture" id=56]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0014.png" type="Texture" id=57]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0025.png" type="Texture" id=58]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0010.png" type="Texture" id=59]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0014.png" type="Texture" id=60]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0019.png" type="Texture" id=61]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0020.png" type="Texture" id=62]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0022.png" type="Texture" id=63]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0021.png" type="Texture" id=64]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0024.png" type="Texture" id=65]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0009.png" type="Texture" id=66]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0008.png" type="Texture" id=67]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0016.png" type="Texture" id=68]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0035.png" type="Texture" id=69]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0009.png" type="Texture" id=70]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0018.png" type="Texture" id=71]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0033.png" type="Texture" id=72]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0017.png" type="Texture" id=73]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0024.png" type="Texture" id=74]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0001.png" type="Texture" id=75]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0029.png" type="Texture" id=76]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0012.png" type="Texture" id=77]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0040.png" type="Texture" id=78]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0007.png" type="Texture" id=79]
+[ext_resource path="res://Spritesheet/Defector/walk/defect_walk0013.png" type="Texture" id=80]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0006.png" type="Texture" id=81]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0009.png" type="Texture" id=82]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0005.png" type="Texture" id=83]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0004.png" type="Texture" id=84]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0006.png" type="Texture" id=85]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0008.png" type="Texture" id=86]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0007.png" type="Texture" id=87]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0016.png" type="Texture" id=88]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0020.png" type="Texture" id=89]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0029.png" type="Texture" id=90]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0031.png" type="Texture" id=91]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0026.png" type="Texture" id=92]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0024.png" type="Texture" id=93]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0032.png" type="Texture" id=94]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0028.png" type="Texture" id=95]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0018.png" type="Texture" id=96]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0022.png" type="Texture" id=97]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0021.png" type="Texture" id=98]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0027.png" type="Texture" id=99]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0025.png" type="Texture" id=100]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0033.png" type="Texture" id=101]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0017.png" type="Texture" id=102]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0023.png" type="Texture" id=103]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0019.png" type="Texture" id=104]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0030.png" type="Texture" id=105]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0010.png" type="Texture" id=106]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0011.png" type="Texture" id=107]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0013.png" type="Texture" id=108]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0015.png" type="Texture" id=109]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0014.png" type="Texture" id=110]
+[ext_resource path="res://Spritesheet/Defector/Attack/defect_attackA0012.png" type="Texture" id=111]
+[ext_resource path="res://Defector.gd" type="Script" id=112]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0004.png" type="Texture" id=113]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0005.png" type="Texture" id=114]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0002.png" type="Texture" id=115]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0001.png" type="Texture" id=116]
+[ext_resource path="res://Spritesheet/Defector/idle/defect_stand0003.png" type="Texture" id=117]
+[ext_resource path="res://Spritesheet/ljeb2.png" type="Texture" id=118]
+[ext_resource path="res://Spritesheet/ljeb0.png" type="Texture" id=119]
+[ext_resource path="res://Spritesheet/ljeb1.png" type="Texture" id=120]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0004.png" type="Texture" id=121]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0005.png" type="Texture" id=122]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0002.png" type="Texture" id=123]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0006.png" type="Texture" id=124]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0009.png" type="Texture" id=125]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0001.png" type="Texture" id=126]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0010.png" type="Texture" id=127]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0013.png" type="Texture" id=128]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0008.png" type="Texture" id=129]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0014.png" type="Texture" id=130]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0015.png" type="Texture" id=131]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0018.png" type="Texture" id=132]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0016.png" type="Texture" id=133]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0017.png" type="Texture" id=134]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0019.png" type="Texture" id=135]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0020.png" type="Texture" id=136]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0022.png" type="Texture" id=137]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0023.png" type="Texture" id=138]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0024.png" type="Texture" id=139]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0025.png" type="Texture" id=140]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0026.png" type="Texture" id=141]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0011.png" type="Texture" id=142]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0012.png" type="Texture" id=143]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0003.png" type="Texture" id=144]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0021.png" type="Texture" id=145]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0007.png" type="Texture" id=146]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0029.png" type="Texture" id=147]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0027.png" type="Texture" id=148]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0028.png" type="Texture" id=149]
+[ext_resource path="res://Spritesheet/Defector/death/defect_death0030.png" type="Texture" id=150]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 7 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 8 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 119 ), ExtResource( 120 ), ExtResource( 118 ) ],
+"loop": false,
+"name": "Atack",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 18.9509, 55 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 7.25, 16.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 124.871, 30.1172 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 12.0642, 47.2997 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 116 ), ExtResource( 115 ), ExtResource( 117 ), ExtResource( 113 ), ExtResource( 114 ), ExtResource( 81 ), ExtResource( 32 ), ExtResource( 19 ), ExtResource( 66 ), ExtResource( 36 ), ExtResource( 18 ), ExtResource( 77 ), ExtResource( 42 ), ExtResource( 57 ), ExtResource( 41 ), ExtResource( 68 ), ExtResource( 44 ), ExtResource( 43 ), ExtResource( 20 ), ExtResource( 37 ), ExtResource( 64 ), ExtResource( 48 ), ExtResource( 38 ), ExtResource( 65 ), ExtResource( 58 ), ExtResource( 39 ), ExtResource( 21 ), ExtResource( 30 ), ExtResource( 76 ), ExtResource( 22 ), ExtResource( 33 ), ExtResource( 45 ), ExtResource( 72 ), ExtResource( 40 ), ExtResource( 69 ), ExtResource( 27 ), ExtResource( 51 ), ExtResource( 23 ), ExtResource( 31 ), ExtResource( 78 ), ExtResource( 25 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 126 ), ExtResource( 123 ), ExtResource( 144 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 124 ), ExtResource( 146 ), ExtResource( 129 ), ExtResource( 125 ), ExtResource( 127 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 128 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 132 ), ExtResource( 135 ), ExtResource( 136 ), ExtResource( 145 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 139 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 147 ), ExtResource( 150 ) ],
+"loop": true,
+"name": "Die",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 55 ), ExtResource( 56 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 34 ), ExtResource( 49 ), ExtResource( 79 ), ExtResource( 67 ), ExtResource( 70 ), ExtResource( 59 ), ExtResource( 50 ), ExtResource( 52 ), ExtResource( 80 ), ExtResource( 60 ), ExtResource( 29 ), ExtResource( 53 ), ExtResource( 73 ), ExtResource( 71 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 35 ), ExtResource( 63 ), ExtResource( 24 ), ExtResource( 74 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 75 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 84 ), ExtResource( 83 ), ExtResource( 85 ), ExtResource( 87 ), ExtResource( 86 ), ExtResource( 82 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 111 ), ExtResource( 108 ), ExtResource( 110 ), ExtResource( 109 ), ExtResource( 88 ), ExtResource( 102 ), ExtResource( 96 ), ExtResource( 104 ), ExtResource( 89 ), ExtResource( 98 ), ExtResource( 97 ), ExtResource( 103 ), ExtResource( 93 ), ExtResource( 100 ), ExtResource( 92 ), ExtResource( 99 ), ExtResource( 95 ), ExtResource( 90 ), ExtResource( 105 ), ExtResource( 91 ), ExtResource( 94 ), ExtResource( 101 ) ],
+"loop": true,
+"name": "Atack",
+"speed": 30.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=7]
+radius = 18.0999
+height = 97.8003
+
+[node name="World" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+scale = Vector2( 0.8, 0.8 )
+motion_scale = Vector2( 0.1, 0.1 )
+motion_mirroring = Vector2( 2540, 2450 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 840, 1120 )
+scale = Vector2( 1.46703, 1.26943 )
+texture = ExtResource( 16 )
+
+[node name="Player" type="KinematicBody2D" parent="."]
+position = Vector2( 103, 193 )
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
+position = Vector2( -4.21967, 285.251 )
+scale = Vector2( 0.297262, 0.534709 )
+frames = SubResource( 1 )
+animation = "Atack"
+frame = 2
+
+[node name="shape" type="CollisionShape2D" parent="Player"]
+position = Vector2( -6, 286 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2( 158, 288 )
+current = true
+
+[node name="AttackArea" type="Area2D" parent="Player" groups=[
+"Punch",
+]]
+position = Vector2( 0, 2 )
+space_override = 2
+
+[node name="AttackCollision" type="CollisionShape2D" parent="Player/AttackArea"]
+position = Vector2( 11.5, 268.25 )
+rotation = 4.71239
+shape = SubResource( 3 )
+disabled = true
+one_way_collision = true
+
+[node name="Tiles" type="Node" parent="."]
+
+[node name="f_ground4" type="StaticBody2D" parent="Tiles"]
+position = Vector2( 1184, 3040 )
+scale = Vector2( 4.30105, 2.60364 )
+
+[node name="Sprite" type="Sprite" parent="Tiles/f_ground4"]
+position = Vector2( 274.357, 274.357 )
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tiles/f_ground4"]
+polygon = PoolVector2Array( 153, 257, 399, 256.5, 405, 263, 381, 302, 182, 303, 153.5, 278 )
+
+[node name="f_ground5" type="StaticBody2D" parent="Tiles"]
+position = Vector2( 2272, 3040 )
+scale = Vector2( 4.30105, 2.60364 )
+
+[node name="Sprite" type="Sprite" parent="Tiles/f_ground5"]
+position = Vector2( 274.357, 274.357 )
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tiles/f_ground5"]
+polygon = PoolVector2Array( 153, 257, 399, 256.5, 405, 263, 381, 302, 182, 303, 153.5, 278 )
+
+[node name="f_ground3" type="StaticBody2D" parent="Tiles"]
+position = Vector2( -992, 3040 )
+scale = Vector2( 4.30105, 2.60364 )
+
+[node name="Sprite" type="Sprite" parent="Tiles/f_ground3"]
+position = Vector2( 274.357, 274.357 )
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tiles/f_ground3"]
+polygon = PoolVector2Array( 153, 257, 399, 256.5, 405, 263, 381, 302, 182, 303, 153.5, 278 )
+
+[node name="f_ground6" type="StaticBody2D" parent="Tiles"]
+position = Vector2( 704.532, 128 )
+scale = Vector2( 4.30105, 2.60364 )
+
+[node name="Sprite" type="Sprite" parent="Tiles/f_ground6"]
+position = Vector2( 274.357, 274.357 )
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tiles/f_ground6"]
+polygon = PoolVector2Array( 153, 257, 399, 256.5, 405, 263, 381, 302, 182, 303, 153.5, 278 )
+
+[node name="mount" type="StaticBody2D" parent="Tiles"]
+
+[node name="Sprite" type="Sprite" parent="Tiles/mount"]
+position = Vector2( 800, 526 )
+texture = ExtResource( 4 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tiles/mount"]
+polygon = PoolVector2Array( 589.503, 601.734, 594.452, 564.258, 608.595, 550.823, 615.666, 493.547, 657.385, 463.141, 717.489, 480.819, 755.673, 473.041, 787.493, 485.062, 817.191, 511.225, 844.768, 526.781, 858.203, 547.994, 891.437, 577.693, 996.089, 574.864, 1005.99, 584.764, 1001.75, 605.27 )
+
+[node name="hang" type="StaticBody2D" parent="Tiles"]
+
+[node name="Sprite" type="Sprite" parent="Tiles/hang"]
+position = Vector2( -132.309, 352.926 )
+texture = ExtResource( 5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tiles/hang"]
+polygon = PoolVector2Array( -208.563, 373.856, -184.063, 334.856, -68.0632, 335.856, -51.0632, 373.856, -107.063, 376.356, -148.063, 386.856 )
+
+[node name="f_ground" type="StaticBody2D" parent="Tiles"]
+
+[node name="Sprite" type="Sprite" parent="Tiles/f_ground"]
+position = Vector2( 274.357, 274.357 )
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tiles/f_ground"]
+polygon = PoolVector2Array( 153, 257, 399, 256.5, 405, 263, 381, 302, 182, 303, 153.5, 278 )
+
+[node name="f_ground2" type="StaticBody2D" parent="Tiles"]
+position = Vector2( 103, 3040 )
+scale = Vector2( 4.30105, 2.60364 )
+
+[node name="Sprite" type="Sprite" parent="Tiles/f_ground2"]
+position = Vector2( 274.357, 274.357 )
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tiles/f_ground2"]
+polygon = PoolVector2Array( 153, 257, 399, 256.5, 405, 263, 381, 302, 182, 303, 153.5, 278 )
+
+[node name="Ground" type="StaticBody2D" parent="Tiles"]
+
+[node name="Sprite" type="Sprite" parent="Tiles/Ground"]
+position = Vector2( 128, 576 )
+texture = ExtResource( 3 )
+
+[node name="shape" type="CollisionShape2D" parent="Tiles/Ground"]
+position = Vector2( 128.061, 581.182 )
+shape = SubResource( 4 )
+
+[node name="Ground2" type="StaticBody2D" parent="Tiles"]
+position = Vector2( 248.464, 0 )
+
+[node name="Sprite" type="Sprite" parent="Tiles/Ground2"]
+position = Vector2( 128, 576 )
+texture = ExtResource( 3 )
+
+[node name="shape" type="CollisionShape2D" parent="Tiles/Ground2"]
+position = Vector2( 128.061, 581.182 )
+shape = SubResource( 4 )
+
+[node name="rock" type="StaticBody2D" parent="Tiles"]
+position = Vector2( 25, -251 )
+
+[node name="Sprite" type="Sprite" parent="Tiles/rock"]
+position = Vector2( 1760, 736 )
+texture = ExtResource( 17 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/rock"]
+position = Vector2( 1760, 738.3 )
+shape = SubResource( 5 )
+
+[node name="Defector" type="KinematicBody2D" parent="."]
+position = Vector2( 324, 438 )
+script = ExtResource( 112 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Defector"]
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 6 )
+animation = "Walk"
+frame = 11
+playing = true
+flip_h = true
+
+[node name="RayCast2D" type="RayCast2D" parent="Defector"]
+position = Vector2( -33, 85 )
+enabled = true
+collision_mask = 15
+collide_with_areas = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Defector"]
+position = Vector2( 7.5, 38 )
+shape = SubResource( 7 )
+
+[connection signal="animation_finished" from="Player/AnimatedSprite" to="Player" method="_on_AnimatedSprite_animation_finished"]
